@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="player">
+        <div class="dashboard">
+            <header>
+                <h4>
+                    Now playing..
+                </h4>
+                <h2></h2>
+            </header>
+            <div class="cd">
+                <div class="cd-thumb">
+
+                </div>
+            </div>
+            <div class="control">
+                <div class="btn-repeat btn">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="btn-prev btn">
+                    <i class="fas fa-backward"></i>
+                </div>
+                <div class="btn-toggle-play btn ">
+                    <i class="fas fa-play icon-play"></i>
+                    <i class="fas fa-pause icon-pause"></i>
+                </div>
+                <div class="btn-next btn">
+                    <i class="fas fa-forward"></i>
+                </div>
+                <div class="btn-random btn">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <audio id="audio" src=""></audio>
+        </div>
+        <div class="playlist">
+
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
